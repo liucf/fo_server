@@ -23,6 +23,7 @@ class CreateFojingsTable extends Migration
             $table->string('ext');
             $table->integer('playback');
             $table->decimal('filesize', $precision = 8, $scale = 2);
+            $table->integer('duration');
             $table->integer('type');
             $table->string('jump_url');
             $table->string('cover');
