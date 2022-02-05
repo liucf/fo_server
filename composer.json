@@ -8,13 +8,18 @@
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "inertiajs/inertia-laravel": "^0.4.3",
         "laravel/framework": "^8.75",
-        "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/sanctum": "^2.8",
+        "laravel/tinker": "^2.5",
+        "overtrue/easy-sms": "^2.1",
+        "qcloudsms/qcloudsms_php": "^0.1.4",
+        "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
+        "laravel/breeze": "^1.6",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^5.10",
@@ -55,7 +60,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

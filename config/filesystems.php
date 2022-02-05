@@ -42,6 +42,11 @@ return [
             'visibility' => 'public',
         ],
 
+        'udisk' => [
+            'driver' => 'local',
+            'root' => '/Volumes/办公/fojing',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

@@ -30,4 +30,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'qcloudsms' => [
+        'app_id' => env('QCOLOUD_SMS_APP_ID'),
+        'key' => env('QCOLOUD_SMS_KEY_ID'),
+        'template_id' => env('QCOLOUD_SMS_TEMPLATE_ID'),
+        'sign' => env('QCOLOUD_SMS_SIGN'),
+    ],
+
 ];

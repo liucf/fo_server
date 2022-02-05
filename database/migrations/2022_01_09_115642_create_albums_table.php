@@ -18,7 +18,7 @@ class CreateAlbumsTable extends Migration
             $table->string('name');
             $table->text('describe');
             $table->string('imageName');
-            $table->foreignId('category_id')->constrained();
+            $table->integer('category_id');
             $table->timestamps();
         });
     }
